@@ -9,8 +9,7 @@
 /// <summary>
 /// 3Dオブジェクト
 /// </summary>
-class Object3d
-{
+class Object3d {
 private: // エイリアス
 	// Microsoft::WRL::を省略
 	template <class T> using ComPtr = Microsoft::WRL::ComPtr<T>;
@@ -22,16 +21,14 @@ private: // エイリアス
 
 public: // サブクラス
 	// 頂点データ構造体
-	struct VertexPosNormalUv
-	{
+	struct VertexPosNormalUv {
 		XMFLOAT3 pos; // xyz座標
 		XMFLOAT3 normal; // 法線ベクトル
 		XMFLOAT2 uv;  // uv座標
 	};
 
 	// 定数バッファ用データ構造体
-	struct ConstBufferData
-	{
+	struct ConstBufferData {
 		XMFLOAT4 color;	// 色 (RGBA)
 		XMMATRIX mat;	// ３Ｄ変換行列
 	};
@@ -137,9 +134,11 @@ private: // 静的メンバ変数
 	// インデックスバッファビュー
 	static D3D12_INDEX_BUFFER_VIEW ibView;
 	// 頂点データ配列
-	static VertexPosNormalUv vertices[vertexCount];
-	// 頂点インデックス配列
-	static unsigned short indices[planeCount * 3];
+	//static VertexPosNormalUv vertices[vertexCount];
+	static std::vector<VertexPosNormalUv> vertices;
+	//頂点インデックス配列
+	//static unsigned short indices[planeCount*3];
+	static std::vector<unsigned short> indices;
 
 private:// 静的メンバ関数
 	/// <summary>
