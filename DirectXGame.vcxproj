@@ -89,13 +89,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DebugText.cpp" />
+    <ClCompile Include="DebugText\DebugText.cpp" />
     <ClCompile Include="DirectXCommon.cpp" />
-    <ClCompile Include="GameScene.cpp" />
-    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="GameScene\GameScene.cpp" />
+    <ClCompile Include="Input\Input.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Object3d.cpp" />
-    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Object3d\Object3d.cpp" />
+    <ClCompile Include="Sprite\Sprite.cpp" />
     <ClCompile Include="WinApp.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,12 +143,12 @@
     <None Include="Resources\shaders\BasicShaderHeader.hlsli" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DebugText.h" />
+    <ClInclude Include="DebugText\DebugText.h" />
     <ClInclude Include="DirectXCommon.h" />
-    <ClInclude Include="GameScene.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="Object3d.h" />
-    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="GameScene\GameScene.h" />
+    <ClInclude Include="Input\Input.h" />
+    <ClInclude Include="Object3d\Object3d.h" />
+    <ClInclude Include="Sprite\Sprite.h" />
     <ClInclude Include="WinApp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
